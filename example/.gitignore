@@ -1,0 +1,5 @@
+# These are the recommended folder names used for temporary deployment files.
+# Don't commit them to your own repository.
+.virtualenv/
+.deployment-env/
+.compiled/

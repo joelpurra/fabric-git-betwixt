@@ -1,0 +1,2 @@
+fabric
+-e git+git://github.com/dbravender/gitric.git#egg=gitric

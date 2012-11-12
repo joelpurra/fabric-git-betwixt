@@ -1,0 +1,3 @@
+fabric
+-e git+git://github.com/dbravender/gitric.git#egg=gitric
+-e git+git://github.com/joelpurra/fabric-git-betwixt.git#egg=betwixt
