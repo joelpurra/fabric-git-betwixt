@@ -101,3 +101,7 @@ When using fabric-git-betwixt, comply to at least one of the three available lic
 Please see the LICENSE file for details.
 
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/joelpurra/fabric-git-betwixt/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
