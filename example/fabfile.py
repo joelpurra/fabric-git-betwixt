@@ -5,15 +5,13 @@ Selective fabric deployment of a compiled project using a git repository *betwix
 
 This is an example fabfile.py that uses betwixt.
 
-http://joelpurra.github.com/fabric-git-betwixt/
+https://joelpurra.github.io/fabric-git-betwixt/
 """
-
 
 
 from fabric.api import *
 from fabric.colors import red
 from betwixt.api import deploy, clean
-
 
 
 # COMPUTER SYSTEM TASKS
@@ -31,43 +29,44 @@ def localhost():
 	env.repo_address_compiled_upstream = os.path.join(env.original_directory, (".compiled/%s-fake-upstream/" % (env.target_name))
 
 	# Placeholder commands when testing the deployment scripts
-	env.start_service_command = "sudo echo \"Simulating starting the service\""
-	env.stop_service_command = "sudo echo \"Simulating stopping the service\""
+	env.start_service_command="sudo echo \"Simulating starting the service\""
+	env.stop_service_command="sudo echo \"Simulating stopping the service\""
 
 	# Don't ask for confirmation when testing deployment.
-	env.are_you_sure = True
+	env.are_you_sure=True
 
 	# Set up local "upstream" repository.
 	create_fake_upstream_directory()
 
 
-@task
+@ task
 def production():
 	'''Use production as remote target'''
 	shared_init()
 	print(red("Production server, beware!"))
-	env.target_name = "production"
-	env.hosts = ["example.com"]
+	env.target_name="production"
+	env.hosts=["example.com"]
 
 	# Set up access to the production server.
-	env.user = "deployment"
-	env.key_filename = ["~/.ssh/deployment_id_rsa"]
+	env.user="deployment"
+	env.key_filename=["~/.ssh/deployment_id_rsa"]
 
 	# Directory on the remote server to put the github repository in. This would also be the root on a web server.
-	env.remote_target_directory = ("/data/web/%s/" % (env.target_name))
+	env.remote_target_directory=("/data/web/%s/" % (env.target_name))
 
 	# You can use, for example, a private github repository for containing your compiled production code.
 	# This will also maintain a nice deployment/push/commit/change history.
-	env.repo_address_compiled_upstream = ("git@github.com:organization/example.com-compiled-%s.git" % (env.target_name))
+	env.repo_address_compiled_upstream=(
+	    "git@github.com:organization/example.com-compiled-%s.git" % (env.target_name))
 
 	# Start/stop web server after successfully pushing all code.
-	env.start_service_command = "sudo /usr/bin/supervisorctl start example.com"
-	env.stop_service_command = "sudo /usr/bin/supervisorctl stop example.com"
+	env.start_service_command="sudo /usr/bin/supervisorctl start example.com"
+	env.stop_service_command="sudo /usr/bin/supervisorctl stop example.com"
 
 
 def shared_init():
-	env.project_name = "myProjectName"
-	env.copy_script_path = "copy-files-to-target.sh"
+	env.project_name="myProjectName"
+	env.copy_script_path="copy-files-to-target.sh"
 
 
 

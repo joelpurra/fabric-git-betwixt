@@ -6,6 +6,6 @@ setup(
     description='Selective fabric deployment of compiled projects using git repositories',
     author='Joel Purra',
     author_email='code+betwixt@joelpurra.com',
-    url='http://joelpurra.com/',
+    url='https://joelpurra.com/',
     packages=['betwixt'],
     requires=['fabric', 'gitric'])

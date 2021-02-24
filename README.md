@@ -1,4 +1,4 @@
-# [fabric-git-betwixt](http://joelpurra.github.com/fabric-git-betwixt/)
+# [fabric-git-betwixt](https://joelpurra.github.io/fabric-git-betwixt/)
 
 Selective fabric deployment of a compiled project using a git repository *betwixt and between* your source code and target machine.
 
@@ -45,10 +45,10 @@ See example files in `example/`.
 
 ### Requirements and dependencies
 
-- [python](http://www.python.org/)
-- [pip](http://www.pip-installer.org/)
-- [git](http://git-scm.com/)
-- [virtualenv](http://www.virtualenv.org/) (see `examples/install.sh` and `examples/wrapper.sh`)
+- [python](https://www.python.org/)
+- [pip](https://pip.pypa.io/)
+- [git](https://git-scm.com/)
+- [virtualenv](https://virtualenv.pypa.io/) (see `examples/install.sh` and `examples/wrapper.sh`)
 - [fabric](http://fabfile.org/) (installed by pip)
 - [gitric](https://github.com/dbravender/gitric) (installed by pip)
 
@@ -94,7 +94,7 @@ Preferred usage, with `virtualenv`, can be seen in `examples/wrapper.sh`.
 
 
 ## License
-Copyright (c) 2012, Joel Purra <http://joelpurra.se/>
+Copyright (c) 2012, Joel Purra <https://joelpurra.com/>
 All rights reserved.
 
 When using fabric-git-betwixt, comply to at least one of the three available licenses: BSD, MIT, GPL.

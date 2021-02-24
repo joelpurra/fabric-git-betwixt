@@ -1,6 +1,6 @@
-# [fabric-git-betwixt](http://joelpurra.github.com/fabric-git-betwixt/) `example/`
+# [fabric-git-betwixt](https://joelpurra.github.io/fabric-git-betwixt/) `example/`
 
-> [fabric-git-betwixt](http://joelpurra.github.com/fabric-git-betwixt/): Selective fabric deployment of a compiled project using a git repository *betwixt and between* your source code and target machine.
+> [fabric-git-betwixt](https://joelpurra.github.io/fabric-git-betwixt/): Selective fabric deployment of a compiled project using a git repository *betwixt and between* your source code and target machine.
 
 This folder shows an example setup. You could copy the contents to a `deployment/` folder in your own project and modify it there.
 
@@ -37,7 +37,7 @@ Defines fabric `@tasks` for `localhost` and `production`. Has most of the setup.
 
 ### `install.sh`
 
-Installs [virtualenv](http://www.virtualenv.org/), a virtual python environment for deployment and adds betwixt with dependencies.
+Installs [virtualenv](https://virtualenv.pypa.io/), a virtual python environment for deployment and adds betwixt with dependencies.
 
 
 ### `README.md`

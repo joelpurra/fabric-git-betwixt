@@ -1,6 +1,6 @@
 fabric-git-betwixt
 Selective fabric deployment of a compiled project using a git repository betwixt and between your source code and target machine.
-Copyright (C) 2012  Joel Purra <http://joelpurra.se/>
+Copyright (C) 2012  Joel Purra <https://joelpurra.com/>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -13,4 +13,4 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
