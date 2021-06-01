@@ -4,6 +4,12 @@ Selective fabric deployment of a compiled project using a git repository *betwix
 
 
 
+> ## ⚠️ This project has been archived
+>
+> No future updates are planned. Feel free to continue using it, but expect no support.
+
+
+
 ## Features
 
 - Uses git to version control your [fabric](http://fabfile.org/) deployments, even when deploying built code with dependencies.
